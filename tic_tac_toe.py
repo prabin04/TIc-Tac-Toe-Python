@@ -8,11 +8,16 @@
 def drawField():
     for row in range(5):
         if row%2 == 0:
-            #print writing lines
             for column in range(5):
                 if column%2 == 0:
-                    print(" ")
+                    if column != 4:
+                        print(" ", end = "")
+                    else:
+                        print(" ")
+                else:
+                    print("|", end ="")
         else:
             print("-----")
-    return drawField()
+
+drawField()
 
