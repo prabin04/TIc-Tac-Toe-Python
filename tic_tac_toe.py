@@ -18,6 +18,13 @@ def drawField():
                     print("|", end ="")
         else:
             print("-----")
+Player = 1
+while(True):
+    MoveRow = int(input("Please enter the row: "))
+    MoveColumn = int(input("Please enter the column: "))
+    if Player == 1:
+        #make move for player 1
+    else:
+        #make move for player 2
 
-drawField()
 
